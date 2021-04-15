@@ -22,7 +22,6 @@
         required
         autocomplete="off"
         @focus="onFocus"
-        @blur="onBlur"
       />
     </vue-simple-suggest>
   </div>
@@ -46,9 +45,6 @@ export default {
       // https://github.com/KazanExpress/vue-simple-suggest/issues/107#issuecomment-504605790
       this.$refs.suggestPopulation.isInFocus = true;
       this.$refs.suggestPopulation.onFocus(evt);
-    },
-    onBlur: function (evt) {
-      this.$refs.suggestPopulation.onBlur(evt);
     }
   }
 };
